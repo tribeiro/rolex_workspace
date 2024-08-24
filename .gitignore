@@ -1,0 +1,7 @@
+/target
+Cargo.lock
+/rolex
+/lsst_efd_client
+/rolex-frontend
+/tailwind
+

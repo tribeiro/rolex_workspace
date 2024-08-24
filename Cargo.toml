@@ -1,0 +1,10 @@
+[workspace]
+
+members = [
+  "rolex-frontend",
+  "rolex",
+  "lsst_efd_client",
+]
+
+resolver = "2"
+

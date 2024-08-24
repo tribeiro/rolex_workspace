@@ -1,0 +1,263 @@
+	navheader {
+		background-color: rgb(61, 137, 139);
+		position: fixed;
+		z-index: 999;
+		height: 55px;
+		top: 0;
+		left: 0;
+		right: 0;
+	}
+
+  forms {
+		background-color: rgb(61, 137, 139);
+		padding: 15px 30px;
+		position: fixed;
+		text-align: center;
+		top: 55px;
+		left: 0;
+		right: 0;
+		z-index: 998;
+		box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+	}
+
+  logmessages {
+     color: rgb(85,85,85);
+  }
+
+  logmessages p {
+    background-color: rgb(248 250 252);
+		padding: 20px 30px 20px 80px;
+		border-bottom: 1px solid #eee;
+		position: relative;
+		line-height: 20px;
+  }
+
+	logmessages p:hover {
+		background-color: rgb(235, 236, 239);
+	}
+
+	nav {
+		max-width: 800px;
+		box-sizing: border-box;
+		margin: 0 auto;
+		padding: 15px 5px;
+		/* text-align: center; */
+	}
+
+  nav forms {
+ 		color: rgba(248, 250, 252, 0.8);
+		line-height: 24px;
+		transition: color 0.15s ease;
+		display: inline-block;
+		vertical-align: middle;
+		font-weight: 300;
+		letter-spacing: 0.075em;
+  }
+
+  nav form {
+ 		color: rgba(248, 250, 252, 0.8);
+		line-height: 24px;
+		transition: color 0.15s ease;
+		display: inline-block;
+		vertical-align: middle;
+		font-weight: 300;
+		letter-spacing: 0.075em;
+  }
+
+  nav a {
+		color: rgba(248, 250, 252, 0.8);
+		line-height: 24px;
+		transition: color 0.15s ease;
+		display: inline-block;
+		vertical-align: middle;
+		font-weight: 300;
+		letter-spacing: 0.075em;
+		margin-right: 1.8em;
+	}
+
+  nav forms input {
+    color: rgb(85,85,85);
+  }
+	
+  nav a:hover {
+		color: rgb(248 250 252);
+	}
+
+	nav [aria-current='page'] {
+		color: rgb(248 250 252);
+		font-weight: 400;
+	}
+
+	nav a:last-of-type {
+		margin-right: 0;
+	}
+
+/* Base style for the button */
+  nav button {
+    background-color: #007bff; /* Primary blue color */
+    color: white; /* White text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding for size */
+    font-size: 16px; /* Font size */
+    font-family: Arial, sans-serif; /* Font family */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+}
+
+/* Hover state */
+nav button:hover {
+    background-color: #0056b3; /* Darker blue color */
+}
+
+/* Active (pressed) state */
+nav button:active {
+    background-color: #004494; /* Even darker blue color */
+    transform: translateY(2px); /* Slightly move the button down */
+}
+
+/* Focus state for accessibility */
+nav button:focus {
+    outline: 2px solid #0056b3; /* Outline for better accessibility */
+    outline-offset: 2px; /* Space between the outline and the button */
+}
+ .pressed {
+     color: black;
+ }
+	.github {
+		color: rgb(248 250 252);
+		font-size: 0.9em;
+		margin: 0;
+		float: right;
+	}
+
+	@media (max-width: 860px) {
+		nav {
+			padding: 15px 30px;
+		}
+	}
+
+	@media (max-width: 600px) {
+		nav {
+			padding: 15px;
+		}
+
+		a {
+			margin-right: 1em;
+		}
+
+		.github {
+			display: none;
+		}
+	}
+
+  .score {
+		font-size: 1.1em;
+		font-weight: 700;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		width: 80px;
+		text-align: center;
+		margin-top: -10px;
+	}
+
+  .score2 {
+		font-size: 1.1em;
+		font-weight: 700;
+		position: absolute;
+		top: 50%;
+		left: 91%;
+		width: 80px;
+		text-align: center;
+		margin-top: -10px;
+	}
+
+  .title {
+    display: block;
+    width: 90% ;
+  }
+
+	.host,
+	.meta {
+		font-size: 0.75em;
+		color: rgb(51 65 85);
+    display: block;
+    text-align: center;
+	}
+
+	.host a,
+	.meta a {
+		color: rgb(51 65 85);
+		text-decoration: underline;
+	}
+
+	.host a:hover,
+	.meta a:hover {
+		color: #335d92;
+	}
+
+	.wikiMarkupText {
+		white-space: pre-wrap;
+		text-align: left;
+		overflow-x: auto;
+		max-width: 70em;
+	}
+
+	wikiMarkupText h1,
+	wikiMarkupText h2,
+	wikiMarkupText h3,
+	wikiMarkupText h4,
+	wikiMarkupText h5,
+	wikiMarkupText h6 {
+	margin: calc(var(--small-padding) * 0.5) 0;
+	}
+
+	wikiMarkupText a {
+	color: var(--link-font-color);
+	}
+
+	wikiMarkupText a:hover,
+	wikiMarkupText a:focus {
+		color: var(--link-hover-font-color);
+	}
+
+    /* Style for dropdown menu */
+    dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    /* Style for dropdown button */
+    dropdown button {
+        background-color: #3498db;
+        color: white;
+        padding: 10px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
+
+    /* Style for dropdown content */
+    dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    /* Style for dropdown items */
+    dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    /* Style for selected items */
+    selected {
+        background-color: #ddd;
+    }
+
