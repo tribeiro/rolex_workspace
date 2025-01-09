@@ -5,10 +5,10 @@ WORKDIR /usr/src/rolex
 
 RUN git clone https://github.com/tribeiro/rs_lsst_efd_client.git 
 RUN git clone https://github.com/tribeiro/rolex-data.git
-RUN git clone --branch 1-add-scripts-to-build-rolex-for-deployment https://github.com/tribeiro/rolex-frontend.git
+RUN git clone https://github.com/tribeiro/rolex-frontend.git
 
 # Build 
-FROM rust:1.71.0 as builder
+FROM rust:1.82.0 as builder
 
 WORKDIR /usr/src/rolex
 
@@ -21,7 +21,7 @@ COPY Cargo.toml .
 RUN ls -la && cargo build -r --bin rolex-frontend
 
 # Deployment image
-FROM debian:bullseye-slim
+FROM debian:bookworm-slim
 
 RUN apt-get update
 RUN apt-get install -y ca-certificates
