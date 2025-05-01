@@ -26,7 +26,7 @@
 
   logmessages p {
     background-color: rgb(248 250 252);
-		padding: 20px 30px 20px 80px;
+		padding: 5px 30px 5px 80px;
 		border-bottom: 1px solid #eee;
 		position: relative;
 		line-height: 20px;
@@ -166,16 +166,47 @@ nav button:focus {
 		font-size: 1.1em;
 		font-weight: 700;
 		position: absolute;
-		top: 50%;
+		top: 30%;
 		left: 91%;
 		width: 80px;
 		text-align: center;
 		margin-top: -10px;
 	}
 
+  .score2 button {
+    background-color: #007bff; /* Primary blue color */
+    color: white; /* White text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding for size */
+    font-size: 16px; /* Font size */
+    font-family: Arial, sans-serif; /* Font family */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+  }
+
+  /* Hover state */
+  .score2 button:hover {
+    background-color: #0056b3; /* Darker blue color */
+  }
+
+  /* Active (pressed) state */
+  .score2 button:active {
+    background-color: #004494; /* Even darker blue color */
+    transform: translateY(2px); /* Slightly move the button down */
+  }
+
+  /* Focus state for accessibility */
+  .score2 button:focus {
+    outline: 2px solid #0056b3; /* Outline for better accessibility */
+    outline-offset: 2px; /* Space between the outline and the button */
+  }
+
   .title {
     display: block;
     width: 90% ;
+    white-space: pre-wrap; /* Preserve whitespace and wrap lines */
+    word-wrap: break-word; /* Break long words */
   }
 
 	.host,
